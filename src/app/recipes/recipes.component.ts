@@ -7,4 +7,7 @@ import { Recipe } from './recipe.model';
   styleUrls: ['./recipes.component.css']
 })
 export class RecipesComponent {
+  selectedRecipe: Recipe;
+
+  
 }
