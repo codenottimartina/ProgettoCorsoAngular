@@ -18,7 +18,6 @@ export class DataStorageService{
         this.http.put('https://ricetteangular-default-rtdb.firebaseio.com/recipes.json', recipes)
         .subscribe(response => {
             console.log(response);
-            
         });
     }
     
@@ -46,6 +45,8 @@ export class DataStorageService{
         }),
         tap(recipes => {
             this.recipeService.setRecipes(recipes);
+            console.log(recipes);
+            
         }))
     }
         
