@@ -47,6 +47,5 @@ export class AuthComponent{
         });
 
         form.reset();
-        this.error = null;
     }
 }
