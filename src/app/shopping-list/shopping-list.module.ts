@@ -12,7 +12,7 @@ import { FormsModule } from "@angular/forms";
     ],
     imports: [
         RouterModule.forChild([
-            {path: 'shopping-list', component: ShoppingListComponent, children: [
+            {path: '', component: ShoppingListComponent, children: [
                 {path: 'edit', component: ShoppingEditComponent},
             ]},
         ]),
@@ -24,4 +24,4 @@ import { FormsModule } from "@angular/forms";
         ShoppingEditComponent,
     ]
 })
-export class shoppingListModule{}
+export class ShoppingListModule{}
